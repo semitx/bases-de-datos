@@ -1,0 +1,194 @@
+Modelos de Administración de Datos
+
+Jerárquico
+
+El modelo jerárquico es uno de los modelos más antiguos de administración de datos. En
+este modelo, los datos se organizan en una estructura similar a un árbol, donde cada
+registro tiene un único padre y puede tener múltiples hijos. Este tipo de estructura es ideal
+para representar datos con una relación jerárquica clara, como los organigramas o los
+sistemas de archivos.
+
+Características principales:
+Estructura de árbol: Cada nodo tiene un único padre, lo que crea una estructura de árbol
+bien definida.
+Acceso rápido: Dado que la relación entre los nodos es clara, las consultas pueden ser muy
+rápidas.
+Rigidez: Es difícil reestructurar la base de datos sin afectar a las relaciones existentes.
+Ejemplo de uso:
+Sistemas de gestión de documentos: Donde los documentos se organizan en carpetas y
+subcarpetas.
+Sistemas de archivos: Como los utilizados en sistemas operativos para organizar archivos y
+directorios.
+
+En Red
+El modelo en red es una evolución del modelo jerárquico y permite que un nodo tenga
+múltiples padres, lo que añade flexibilidad. Utiliza una estructura de gráfico para organizar
+los datos, con nodos que representan entidades y aristas que representan las relaciones
+entre ellas.
+
+Características principales:
+Flexibilidad: Un nodo puede tener múltiples padres, lo que permite representar relaciones
+más complejas.
+Navegación compleja: Aunque es más flexible, navegar por la estructura de datos puede ser
+más complejo.
+Eficiencia: Es eficiente en términos de uso de memoria y velocidad de acceso a los datos.
+Ejemplo de uso:
+Sistemas de gestión de inventarios: Donde un producto puede estar relacionado con
+múltiples categorías y proveedores.
+Sistemas de gestión de proyectos: Para representar dependencias entre tareas y recursos.
+
+Relacional
+
+El modelo relacional, propuesto por Edgar F. Codd en 1970, organiza los datos en tablas
+bidimensionales llamadas relaciones. Cada tabla tiene filas (tuplas) y columnas (atributos).
+Las tablas pueden estar relacionadas entre sí mediante claves primarias y externas. Este
+modelo es el más utilizado en la actualidad debido a su simplicidad y flexibilidad.
+
+Características principales:
+Estructura tabular: Los datos se organizan en tablas, lo que facilita su comprensión y
+manipulación.
+Flexibilidad: Las relaciones entre tablas permiten representar datos complejos de manera
+sencilla.
+Consistencia: Las restricciones de integridad garantizan la consistencia de los datos.
+Ejemplo de uso:
+Sistemas de gestión de bases de datos empresariales: Como sistemas de contabilidad,
+CRM (Customer Relationship Management) y ERP (Enterprise Resource Planning).
+Aplicaciones web: Como tiendas en línea y plataformas de redes sociales.
+Investigación de SGBD SQL
+
+MySQL
+
+MySQL es un sistema de gestión de bases de datos relacional de código abierto que utiliza
+SQL (Structured Query Language) para gestionar los datos. Es muy popular debido a su
+rendimiento, fiabilidad y facilidad de uso.
+
+Características principales:
+Código abierto: Lo que permite su uso y modificación de manera gratuita.
+Escalabilidad: Puede manejar desde pequeñas aplicaciones hasta grandes sistemas
+empresariales.
+Compatibilidad: Es compatible con una amplia variedad de plataformas y lenguajes de
+programación.
+Ejemplo de uso:
+Aplicaciones web: Como e-commerce, blogs y sistemas de gestión de contenido (CMS).
+Sistemas empresariales: Para gestionar grandes volúmenes de datos en organizaciones.
+
+PostgreSQL
+PostgreSQL es un sistema de gestión de bases de datos relacional y objeto-relacional que
+soporta SQL. Es conocido por su robustez, flexibilidad y conformidad con estándares SQL.
+
+Características principales:
+Soporte para tipos de datos avanzados: Incluyendo JSON, XML y datos espaciales.
+Transacciones ACID: Garantiza la atomicidad, consistencia, aislamiento y durabilidad de las
+transacciones.
+Extensibilidad: Permite la creación de nuevos tipos de datos, funciones y operadores.
+Ejemplo de uso:
+Aplicaciones científicas y de investigación: Que requieren operaciones complejas y
+manipulación de grandes volúmenes de datos.
+Aplicaciones empresariales: Que necesitan un alto grado de integridad y confiabilidad en los
+datos.
+
+Microsoft SQL Server
+
+Microsoft SQL Server es un sistema de gestión de bases de datos relacional desarrollado
+por Microsoft. Ofrece herramientas avanzadas para la integración, análisis y administración
+de datos.
+
+Características principales:
+Integración con productos Microsoft: Como Azure y Power BI.
+Alta disponibilidad: Mediante características como Always On y clustering.
+Seguridad: Ofrece avanzadas funcionalidades de seguridad y control de acceso.
+Ejemplo de uso:
+Aplicaciones empresariales: Que requieren alta disponibilidad y recuperación ante
+desastres.
+Sistemas de análisis de datos: Para obtener insights valiosos a partir de grandes volúmenes
+de datos.
+
+Oracle Database
+
+Oracle Database es un sistema de gestión de bases de datos relacional desarrollado por
+Oracle Corporation. Es conocido por su escalabilidad, rendimiento y capacidades de
+seguridad.
+
+Características principales:
+Escalabilidad vertical y horizontal: Permite gestionar grandes volúmenes de datos en
+múltiples nodos.
+Alta disponibilidad y recuperación ante desastres: Mediante características como Data
+Guard y Real Application Clusters (RAC).
+Seguridad avanzada: Incluye cifrado de datos, autenticación y auditoría.
+Ejemplo de uso:
+Grandes empresas y corporaciones: Que necesitan gestionar grandes volúmenes de datos
+con alta seguridad y rendimiento.
+Sistemas financieros y de banca: Donde la integridad y seguridad de los datos son críticas.
+Investigación de SGBD NoSQL
+
+MongoDB
+
+MongoDB es una base de datos NoSQL orientada a documentos que utiliza un formato de
+almacenamiento similar a JSON. Es conocido por su flexibilidad y escalabilidad horizontal.
+
+Características principales:
+Modelo de datos flexible: Permite almacenar datos semi-estructurados y no estructurados.
+Escalabilidad horizontal: A través de la partición de datos en múltiples nodos.
+Consultas avanzadas: Soporte para búsquedas por texto, agregaciones y operaciones
+geoespaciales.
+Ejemplo de uso:
+Aplicaciones con grandes volúmenes de datos no estructurados: Como redes sociales,
+análisis de big data y sistemas de recomendaciones.
+Sistemas de gestión de contenido: Para almacenar y gestionar grandes cantidades de
+documentos y archivos multimedia.
+
+CouchDB
+
+CouchDB es una base de datos NoSQL orientada a documentos que utiliza un formato
+JSON para almacenar datos. Soporta una arquitectura distribuida con replicación y
+sincronización entre nodos.
+
+Características principales:
+Modelo de datos basado en JSON: Facilita el almacenamiento y la manipulación de
+documentos.
+Arquitectura distribuida: Permite la replicación y sincronización de datos entre múltiples
+nodos.
+Alta disponibilidad: Garantiza la disponibilidad de los datos incluso en entornos con
+conexiones de red intermitentes.
+Ejemplo de uso:
+Aplicaciones móviles y web: Que requieren sincronización de datos entre dispositivos y
+servidores.
+Sistemas de gestión de contenido distribuido: Para almacenar y gestionar datos en múltiples
+ubicaciones geográficas.
+Firebase Firestore
+Firebase Firestore es una base de datos NoSQL en tiempo real ofrecida por Google
+Firebase. Proporciona sincronización en tiempo real y almacenamiento de datos en la nube.
+Características principales:
+Sincronización en tiempo real: Permite que los datos se actualicen instantáneamente en
+todas las instancias conectadas.
+Escalabilidad automática: Gestiona automáticamente el escalado de la base de datos según
+la carga de trabajo.
+Integración con Firebase: Permite aprovechar otras herramientas de Firebase como
+autenticación, hosting y notificaciones push.
+Ejemplo de uso:
+Aplicaciones móviles y web: Que requieren actualizaciones en tiempo real, como chats,
+notificaciones y juegos multijugador.
+Sistemas de colaboración: Para compartir y sincronizar datos entre múltiples usuarios en
+tiempo real.
+Breve Descripción de AWS, Amazon RDS y Amazon DynamoDB
+AWS (Amazon Web Services)
+AWS es una plataforma de servicios en la nube de Amazon que ofrece una amplia gama de
+servicios de infraestructura, almacenamiento, bases de datos y herramientas para
+desarrolladores. Permite a las empresas escalar y gestionar sus aplicaciones en la nube de
+manera eficiente, reduciendo costos y aumentando la flexibilidad.
+Ejemplo de servicios ofrecidos:
+Computación: Amazon EC2 (instancias de máquinas virtuales), AWS Lambda (funciones sin
+servidor).
+Almacenamiento: Amazon S3 (almacenamiento de objetos), Amazon EBS (almacenamiento
+en bloque).
+Bases de datos: Amazon RDS, Amazon DynamoDB, Amazon Aurora.
+Amazon RDS (Relational Database Service)
+Amazon RDS es un servicio de base de datos administrado que facilita la configuración,
+operación y escalado de bases de datos relacionales en la nube. Soporta varios motores de
+bases de datos, incluyendo MySQL, PostgreSQL, SQL Server y Oracle. RDS automatiza
+tareas como la copia de seguridad, la actualización de software y la escalabilidad.
+Ventajas:
+Administración simplificada: Reduce la carga operativa permitiendo a los administradores de
+bases de datos enfocarse en tareas más estratégicas.
+Alta disponibilidad: Soporta configuraciones Multi-AZ (zonas de disponibilidad) para
+recuperación ante
